@@ -83,6 +83,143 @@ print(pieza_cuatro)
 
 catalog.append(pieza_cuatro)
 
+# PIEZA 5
+
+id_cinco = input("Ingrese el identificador de la pieza: ")
+name_cinco = input("Ingrese el nombre de la pieza: ")
+category_cinco = input("Ingrese la categoria de la pieza: ")
+price_cinco = float(input("Ingrese el precio de la pieza: "))
+status_cinco = input("Ingrese el estado de la pieza: ")
+description_cinco = input("Ingrese la descripción de la pieza: ")
+
+pieza_cinco = {
+    "id": id_cinco,
+    "name": name_cinco,
+    "category": category_cinco,
+    "price": price_cinco,
+    "status": status_cinco,
+    "description": description_cinco
+}
+
+print(pieza_cinco)
+
+catalog.append(pieza_cinco)
+
+
+# PIEZA 6
+
+id_seis = input("Ingrese el identificador de la pieza: ")
+name_seis = input("Ingrese el nombre de la pieza: ")
+category_seis = input("Ingrese la categoria de la pieza: ")
+price_seis = float(input("Ingrese el precio de la pieza: "))
+status_seis = input("Ingrese el estado de la pieza: ")
+description_seis = input("Ingrese la descripción de la pieza: ")
+
+pieza_seis = {
+    "id": id_seis,
+    "name": name_seis,
+    "category": category_seis,
+    "price": price_seis,
+    "status": status_seis,
+    "description": description_seis
+}
+
+print(pieza_seis)
+
+catalog.append(pieza_seis)
+
+
+# PIEZA 7
+
+id_siete = input("Ingrese el identificador de la pieza: ")
+name_siete = input("Ingrese el nombre de la pieza: ")
+category_siete = input("Ingrese la categoria de la pieza: ")
+price_siete = float(input("Ingrese el precio de la pieza: "))
+status_siete = input("Ingrese el estado de la pieza: ")
+description_siete = input("Ingrese la descripción de la pieza: ")
+
+pieza_siete = {
+    "id": id_siete,
+    "name": name_siete,
+    "category": category_siete,
+    "price": price_siete,
+    "status": status_siete,
+    "description": description_siete
+}
+
+print(pieza_siete)
+
+catalog.append(pieza_siete)
+
+
+# PIEZA 8
+
+id_ocho = input("Ingrese el identificador de la pieza: ")
+name_ocho = input("Ingrese el nombre de la pieza: ")
+category_ocho = input("Ingrese la categoria de la pieza: ")
+price_ocho = float(input("Ingrese el precio de la pieza: "))
+status_ocho = input("Ingrese el estado de la pieza: ")
+description_ocho = input("Ingrese la descripción de la pieza: ")
+
+pieza_ocho = {
+    "id": id_ocho,
+    "name": name_ocho,
+    "category": category_ocho,
+    "price": price_ocho,
+    "status": status_ocho,
+    "description": description_ocho
+}
+
+print(pieza_ocho)
+
+catalog.append(pieza_ocho)
+
+
+# PIEZA 9
+
+id_nueve = input("Ingrese el identificador de la pieza: ")
+name_nueve = input("Ingrese el nombre de la pieza: ")
+category_nueve = input("Ingrese la categoria de la pieza: ")
+price_nueve = float(input("Ingrese el precio de la pieza: "))
+status_nueve = input("Ingrese el estado de la pieza: ")
+description_nueve = input("Ingrese la descripción de la pieza: ")
+
+pieza_nueve = {
+    "id": id_nueve,
+    "name": name_nueve,
+    "category": category_nueve,
+    "price": price_nueve,
+    "status": status_nueve,
+    "description": description_nueve
+}
+
+print(pieza_nueve)
+
+catalog.append(pieza_nueve)
+
+
+# PIEZA 10
+
+id_diez = input("Ingrese el identificador de la pieza: ")
+name_diez = input("Ingrese el nombre de la pieza: ")
+category_diez = input("Ingrese la categoria de la pieza: ")
+price_diez = float(input("Ingrese el precio de la pieza: "))
+status_diez = input("Ingrese el estado de la pieza: ")
+description_diez = input("Ingrese la descripción de la pieza: ")
+
+pieza_diez = {
+    "id": id_diez,
+    "name": name_diez,
+    "category": category_diez,
+    "price": price_diez,
+    "status": status_diez,
+    "description": description_diez
+}
+
+print(pieza_diez)
+
+catalog.append(pieza_diez)
+
 print(catalog)
 
 print(len(catalog))
