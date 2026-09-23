@@ -223,10 +223,10 @@ categorias.add(pieza_diez["category"])
 print(categorias)
 print(len(categorias))
 
-for pieza in catalog: #manera sencilla general de ver todas las piezas del catalogo en una lista de listas
+for pieza in catalog: # manera sencilla general de ver todas las piezas del catalogo en una lista de listas
     print(pieza)
 
-for pieza in catalog: #manera especifica de ver por cada campo de cada diccionario y con f" o template string
+for pieza in catalog: # manera especifica de ver por cada campo de cada diccionario y con f" o template string
     print(f"ID : {pieza['id']}")
     print(f"Nombre : {pieza['name']}")
     print(f"Categoria : {pieza['category']}")
@@ -238,3 +238,44 @@ print("INFORMACION GENERAL DEL CATALOGO: ")
 print(f"Cantidad total de piezas: {len(catalog)}")
 print(f"Cantidad de categorias: {len(categorias)}")
 print(f"Categorias Unicas: {categorias}")
+
+# NIVEL II – Filtros, operadores y strings
+# Parte 6. Filtrar piezas por estado
+
+for pieza in catalog:
+    if pieza["status"] == "disponible":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+
+for pieza in catalog:
+    if pieza["status"] == "reservada":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+
+for pieza in catalog:
+    if pieza["status"] == "vendida":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+
+# si no existe ninguna pieza con el estado buscado, mostrar un mensaje de “no hay resultados”:
+
+encontrado = False
+for pieza in catalog:
+    if pieza["status"] == "disponible":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+        encontrado = True
+if encontrado == False:
+    print("No hay piezas disponibles")
+
+encontrado = False
+for pieza in catalog:
+    if pieza["status"] == "reservada":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+        encontrado = True
+if encontrado == False:
+    print("No hay piezas reservadas")
+
+encontrado = False
+for pieza in catalog:
+    if pieza["status"] == "vendida":
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']}")
+        encontrado = True
+if encontrado == False:
+    print("No hay piezas vendidas")
