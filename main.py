@@ -83,8 +83,6 @@ print(pieza_cuatro)
 
 catalog.append(pieza_cuatro)
 
-# PIEZA 5
-
 id_cinco = input("Ingrese el identificador de la pieza: ")
 name_cinco = input("Ingrese el nombre de la pieza: ")
 category_cinco = input("Ingrese la categoria de la pieza: ")
@@ -104,9 +102,6 @@ pieza_cinco = {
 print(pieza_cinco)
 
 catalog.append(pieza_cinco)
-
-
-# PIEZA 6
 
 id_seis = input("Ingrese el identificador de la pieza: ")
 name_seis = input("Ingrese el nombre de la pieza: ")
@@ -128,9 +123,6 @@ print(pieza_seis)
 
 catalog.append(pieza_seis)
 
-
-# PIEZA 7
-
 id_siete = input("Ingrese el identificador de la pieza: ")
 name_siete = input("Ingrese el nombre de la pieza: ")
 category_siete = input("Ingrese la categoria de la pieza: ")
@@ -150,9 +142,6 @@ pieza_siete = {
 print(pieza_siete)
 
 catalog.append(pieza_siete)
-
-
-# PIEZA 8
 
 id_ocho = input("Ingrese el identificador de la pieza: ")
 name_ocho = input("Ingrese el nombre de la pieza: ")
@@ -174,9 +163,6 @@ print(pieza_ocho)
 
 catalog.append(pieza_ocho)
 
-
-# PIEZA 9
-
 id_nueve = input("Ingrese el identificador de la pieza: ")
 name_nueve = input("Ingrese el nombre de la pieza: ")
 category_nueve = input("Ingrese la categoria de la pieza: ")
@@ -196,9 +182,6 @@ pieza_nueve = {
 print(pieza_nueve)
 
 catalog.append(pieza_nueve)
-
-
-# PIEZA 10
 
 id_diez = input("Ingrese el identificador de la pieza: ")
 name_diez = input("Ingrese el nombre de la pieza: ")
@@ -223,3 +206,35 @@ catalog.append(pieza_diez)
 print(catalog)
 
 print(len(catalog))
+
+categorias = set()
+
+categorias.add(pieza_uno["category"])
+categorias.add(pieza_dos["category"])
+categorias.add(pieza_tres["category"])
+categorias.add(pieza_cuatro["category"])
+categorias.add(pieza_cinco["category"])
+categorias.add(pieza_seis["category"])
+categorias.add(pieza_siete["category"])
+categorias.add(pieza_ocho["category"])
+categorias.add(pieza_nueve["category"])
+categorias.add(pieza_diez["category"])
+
+print(categorias)
+print(len(categorias))
+
+for pieza in catalog: #manera sencilla general de ver todas las piezas del catalogo en una lista de listas
+    print(pieza)
+
+for pieza in catalog: #manera especifica de ver por cada campo de cada diccionario y con f" o template string
+    print(f"ID : {pieza['id']}")
+    print(f"Nombre : {pieza['name']}")
+    print(f"Categoria : {pieza['category']}")
+    print(f"Precio : {pieza['price']}")
+    print(f"Estado : {pieza['status']}")
+    print(f"Descripcion : {pieza['description']}")
+
+print("INFORMACION GENERAL DEL CATALOGO: ")
+print(f"Cantidad total de piezas: {len(catalog)}")
+print(f"Cantidad de categorias: {len(categorias)}")
+print(f"Categorias Unicas: {categorias}")
