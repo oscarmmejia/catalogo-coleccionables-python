@@ -312,3 +312,21 @@ try:
 
 except ValueError:
     print("El precio debe ser un valor numérico")
+
+# Parte 8. Aplicar operadores lógicos
+
+for pieza in catalog:
+    if pieza["price"] > 0 and pieza["status"] == "disponible":
+        print(f"{pieza['name']} - Puede publicarse")
+    else:
+        print(f"{pieza['name']} - No puede publicarse")
+
+for pieza in catalog:
+    if pieza["status"] == "reservada" or pieza["status"] == "vendida":
+        print(f"{pieza['name']} - Requiere revision")
+    else:
+        print(f"{pieza['name']} - No requiere revision")
+
+for pieza in catalog:
+    if pieza["status"] != "vendida":
+        print(pieza["name"])
