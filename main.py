@@ -279,3 +279,36 @@ for pieza in catalog:
         encontrado = True
 if encontrado == False:
     print("No hay piezas vendidas")
+
+# Parte 7: Filtrar piezas por precio
+
+precio_minimo = float(input("Ingrese el precio mínimo: "))
+
+for pieza in catalog:
+    if pieza["price"] >= precio_minimo:
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']} - Precio: {pieza['price']}")
+
+encontrado = False
+
+for pieza in catalog:
+    if pieza["price"] >= precio_minimo:
+        print(f"ID: {pieza['id']} - Nombre: {pieza['name']} - Precio: {pieza['price']}")
+        encontrado = True
+if encontrado == False:
+    print("No hay piezas")
+
+try:
+    precio_minimo = float(input("Ingrese el precio mínimo: "))
+
+    encontrado = False
+
+    for pieza in catalog:
+        if pieza["price"] >= precio_minimo:
+            print(f"ID: {pieza['id']} - Nombre: {pieza['name']} - Precio: {pieza['price']}")
+            encontrado = True
+
+    if encontrado == False:
+        print("No hay piezas")
+
+except ValueError:
+    print("El precio debe ser un valor numérico")
