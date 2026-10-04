@@ -202,5 +202,5 @@ El archivo `main.py` contiene la implementación principal del programa.
 
 ## Autor
 
-Proyecto realizado como ejercicio práctico de introducción a Python.
+Oscar Mauricio Mejía.
 
